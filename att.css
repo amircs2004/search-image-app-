@@ -1,0 +1,118 @@
+body{
+    background-color: #e4e4e4 ;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+.search{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+   border: none;
+   box-shadow: 0 2px 2px rgba(0, 0, 0, .2) ;
+   border-radius: 5px;
+   font-size: 18px;
+   color: #333;
+}
+.searchBtn{
+    padding: 1px;
+    background-color: #4caf50;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+   color: white;
+   font-size: 18px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
+.searchBtn:hover{
+    background-color: #3e8e41;
+}
+.searchResults{
+    display: flex;
+    flex-wrap: wrap;
+   padding: 10px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  /*  background-color: white;*/
+    
+}
+.searchCard{
+    margin-bottom: 60px;
+    width: 30%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    /*overflow: hidden;*/
+    transition: transform .3s ease-in-out;
+}
+
+.searchCard img{
+    width:100% ;
+    height: 200px;
+    object-fit: cover;
+}
+.searchCard:hover img{
+   transform: scale(1.01);
+}
+.searchCard a {
+    font-family: cursive;
+    color: black;
+    padding: 15px;
+    display: block; 
+    text-decoration: none;
+
+}
+.searchCard:hover a{
+    background-color: rgba(0, 0, 0, 0.1);
+   
+}
+#showMore{
+    background-color: #008cba;
+    border:none;
+color: white;
+padding: 20px 20px;
+text-align: center;
+display: inline-block;
+margin: 20px  auto ;
+display:block;
+border-radius: 10px;
+cursor: pointer;
+transition: transform .3s ease-in-out;
+}
+#showMore:hover{
+    background-color:darkblue;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 10px;
+    transform: scale(1.1);
+}
+@media screen and (max-width:768px){
+    .searchCard{
+        width:45% ;
+    }
+}
+@media screen and (max-width:480px){
+    .searchCard{
+        width:100% ;
+    }
+    form{
+        flex-direction: column;
+    }
+   #search{
+    margin-bottom :10px; 
+   }
+}
